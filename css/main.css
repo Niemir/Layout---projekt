@@ -178,4 +178,95 @@ button {
 .burger__line3 {
   bottom: 25%;
 }
+
+.actions {
+  font-size: 10px;
+}
+
+.actions__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.actions__item {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.actions__item--1 {
+  background-image: url("../../assets/action-paint.png");
+}
+
+.actions__item--2 {
+  background-image: url("../../assets/action-wallpaper.png");
+}
+
+.actions__item--3 {
+  background-image: url("../../assets/action-tiles.png");
+}
+
+.actions__item--4 {
+  background-image: url("../../assets/action-floor.png");
+}
+
+.actions__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-sarif;
+  color: yellow;
+  border: 2px solid yellow;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.6em;
+}
+
+.team {
+  padding: 20px 0;
+  background-color: #1f1f1f;
+}
+
+.team__item {
+  width: 93%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 260px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 1px solid #9d9d9d;
+  color: #595959;
+  font-family: 'Raleway', sans-serif;
+}
+
+.team__photo {
+  padding: 30px 0;
+}
+
+.team__name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.team__description {
+  color: #9d9d9d;
+  width: 90%;
+  padding-top: 5px;
+  line-height: 30px;
+}
 /*# sourceMappingURL=main.css.map */

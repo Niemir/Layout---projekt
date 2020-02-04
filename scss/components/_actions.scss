@@ -1,0 +1,47 @@
+.actions {
+  font-size: 10px;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+
+    &--1 {
+      background-image: url('../../assets/action-paint.png');
+    }
+
+    &--2 {
+      background-image: url('../../assets/action-wallpaper.png');
+
+    }
+
+    &--3 {
+      background-image: url('../../assets/action-tiles.png');
+    }
+
+    &--4 {
+      background-image: url('../../assets/action-floor.png');
+    }
+
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-sarif;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.6em;
+  }
+}
