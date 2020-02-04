@@ -1,21 +1,33 @@
 .header {
   height: 490px;
+  position: relative;
   background-image: url('../../assets/header-background.png');
   background-size: 250%;
   background-position: center;
   background-position-x: 50%;
+  font-size: 10px;
+
+  @media (max-width:479px) {
+    font-size: 8px;
+    background-size: cover;
+  }
 
   &__text {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    color: white;
     text-align: center;
   }
 
   &__name {
     padding: 60px 0 10px 0;
-    opacity: 0.8;
+    color: #ccc;
+    font-size: 2.5em;
+  }
+
+  &__title {
+    color: white;
+    font-size: 4em;
   }
 
   &__btns {
@@ -24,23 +36,66 @@
     width: 300px;
     justify-content: center;
     margin: 50px auto 0 auto;
+    font-size: 1.6em;
 
+    @media (max-width:479px) {
+      width: 250px
+    }
 
   }
 
   &__btn {
     background: yellow;
     border: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
     padding: 20px;
     margin: 10px 0;
 
     &--call {
       background: rgba(0, 0, 0, 0.5);
       color: yellow;
+    }
+  }
 
+  &__show-more {
+    color: white;
+    font-weight: 700;
+    margin-top: 20px
+  }
+
+  &__show-btn {
+    background: none;
+    border: none;
+    margin-top: 20px;
+
+    img {
+      width: 70%;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+  }
+
+  &__arrow {
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 10px 10px;
+
+    &-img {
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &-img--right {
+      transform: rotate(180deg);
     }
   }
 
