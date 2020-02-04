@@ -55,3 +55,13 @@
     font-size: 1.6em;
   }
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  width: $box-width;
+  margin: 0 auto;
+}
