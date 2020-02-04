@@ -235,7 +235,7 @@ button {
 }
 
 .team__item {
-  width: 93%;
+  width: 90%;
   margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,5 +268,74 @@ button {
   width: 90%;
   padding-top: 5px;
   line-height: 30px;
+}
+
+.main {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.realizations__text-box {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.realizations__title {
+  font-size: 3.3em;
+  font-weight: 900;
+  padding: 20px 0;
+}
+
+.realizations__description {
+  font-size: 1.3em;
+  line-height: 25px;
+  color: #595959;
+}
+
+.realizations__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.realizations__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.realizations__arrow {
+  padding: 20px 0;
+}
+
+.realizations__arrow--right img {
+  display: block;
+  margin-left: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.realizations__btn {
+  background: none;
+  border: none;
+  color: #f6da14;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.6em;
 }
 /*# sourceMappingURL=main.css.map */

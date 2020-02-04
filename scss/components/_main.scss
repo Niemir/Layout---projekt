@@ -1,0 +1,57 @@
+.main {
+  font-size: 10px;
+  @include fontText;
+}
+
+.realizations {
+
+  &__text-box {
+    width: $box-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 3.3em;
+    font-weight: 900;
+    padding: 20px 0;
+  }
+
+  &__description {
+    font-size: 1.3em;
+    line-height: 25px;
+    color: #595959
+  }
+
+  &__nav {
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__arrows {
+    display: flex;
+  }
+
+  &__arrow {
+    padding: 20px 0;
+
+    &--right img {
+      display: block;
+      margin-left: 10px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    color: #f6da14;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.6em;
+  }
+}

@@ -3,7 +3,7 @@
   background-color: #1f1f1f;
 
   &__item {
-    width: 93%;
+    width: $box-width;
     margin: 10px auto;
     display: flex;
     flex-direction: column;

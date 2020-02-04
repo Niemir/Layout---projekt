@@ -1,0 +1,15 @@
+@mixin fontTitles {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@mixin fontText {
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+$box-width:90%;
