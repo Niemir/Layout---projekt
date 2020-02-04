@@ -1,0 +1,47 @@
+.header {
+  height: 490px;
+  background-image: url('../../assets/header-background.png');
+  background-size: 250%;
+  background-position: center;
+  background-position-x: 50%;
+
+  &__text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+
+  &__name {
+    padding: 60px 0 10px 0;
+    opacity: 0.8;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+
+
+  }
+
+  &__btn {
+    background: yellow;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 10px 0;
+
+    &--call {
+      background: rgba(0, 0, 0, 0.5);
+      color: yellow;
+
+    }
+  }
+
+}
