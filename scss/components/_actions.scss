@@ -12,6 +12,10 @@
     background-size: cover;
     position: relative;
 
+    @media(min-width: 768px) {
+      width: 50%;
+    }
+
     &--1 {
       background-image: url('../../assets/action-paint.png');
     }
