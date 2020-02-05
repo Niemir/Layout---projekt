@@ -1,20 +1,125 @@
+.page {
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+
+  @media(min-width: 768px) {
+    left: 0;
+  }
+
+}
+
+.page--active {
+
+  left: -60%;
+}
+
 .nav {
   display: flex;
   position: relative;
   height: 90px;
-  width: 100%;
-  flex-direction: row;
+  width: $box-width;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
 
-  &__logo {
-    position: absolute;
-    left: 8%;
+
+  &__burger {
+
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__burger-menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 60%;
+    height: 100vh;
+    z-index: 2;
+    background-color: #333;
+    transition: transform 0.5s;
+
+    @media(min-width: 768px) {
+      position: static;
+      overflow: unset;
+      transform: translate(0);
+      height: auto;
+      z-index: 0;
+      background-color: #fff;
+    }
+  }
+
+  &__burger-menu--active {
+    transform: translateX(0);
+  }
+
+  &__item-list {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    // justify-content: space-between;
+    text-align: left;
+    list-style: none;
+
+    @media(min-width: 768px) {
+
+      height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__item {
+    padding: 30px 0 30px 40px;
+    border-bottom: 1px solid #444;
+
+    @media(min-width: 768px) {
+      border: none;
+      padding: 0;
+
+    }
 
 
   }
 
-  &__burger {
-    left: 85%;
+  &__item--back {
+    @include fontTitles;
+    font-size: 15px;
+    color: #555;
+    text-align: left;
+
+    @media(min-width: 768px) {
+      display: none;
+    }
+
+    @include fontTitles;
+
+    img {
+      width: 10px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    @include fontTitles;
+
+    @media(min-width: 768px) {
+      @include fontText;
+      font-size: 13px;
+      color: #333;
+
+    }
+
+    &:hover {
+      color: #f8db15;
+    }
   }
 }
 
