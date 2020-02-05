@@ -1,0 +1,180 @@
+.call {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8db15;
+  @include fontText;
+  font-size: 10px;
+
+  &__box {
+    padding: 20px;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 1.5em;
+    color: #595959;
+  }
+
+  &__phonebox {
+
+    display: flex;
+    width: $box-width;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 0 20px 0;
+    font-weight: 900;
+    font-size: 2.5em;
+  }
+}
+
+.info {
+
+  color: white;
+  background: black;
+  font-size: 10px;
+
+  &__logo {
+    width: $box-width;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-bottom: 1px solid #222;
+
+    &-img {
+      filter: invert(1);
+    }
+  }
+
+  &__personal {
+    width: $box-width;
+    margin: 0 auto;
+    padding: 20px 0;
+    @include fontText
+  }
+
+  &__name {
+    font-size: 1.7em;
+  }
+
+  &__box {
+
+    display: flex;
+    flex-wrap: wrap;
+    // flex-shrink: 0;
+    border-bottom: 1px solid #222;
+
+  }
+
+  &__data {
+    width: 50%;
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    color: #595959;
+    font-weight: bold;
+
+    &:nth-child(2) {
+      padding-left: 15px;
+
+    }
+
+    &:nth-child(3) {
+      padding-bottom: 30px;
+
+    }
+
+    span {
+      color: yellow
+    }
+  }
+
+
+}
+
+.media {
+  display: flex;
+  width: $box-width;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 20px;
+
+  &__follow {
+    width: 50%;
+    @include fontText;
+    color: #595959;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  &__box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 15px
+  }
+}
+
+.footer {
+  &__nav {
+    width: $box-width;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  &__item-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    text-align: center;
+
+    &:nth-child(1) {}
+  }
+
+  &__link {
+
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    @include fontText;
+
+    &:hover {
+      color: yellow;
+    }
+
+  }
+
+}
+
+.map {
+  background: url('../../assets/map.png');
+  background-position: 15% 37%;
+  background-size: 190%;
+  height: 250px;
+  position: relative;
+
+  &__up {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__up-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    @include fontText;
+    font-size: 1.5em;
+    color: #f7db15;
+    font-weight: 900;
+    transform: translateX(-50%)
+  }
+}
