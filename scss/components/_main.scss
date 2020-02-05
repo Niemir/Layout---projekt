@@ -26,7 +26,7 @@
 
   &__nav {
     display: flex;
-    width: 93%;
+    width: $box-width;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -63,5 +63,32 @@
 
 .project {
   width: $box-width;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__box {
+
+    padding: 30px;
+
+
+  }
+
+  &__title {
+    font-size: 1.8em;
+    font-weight: 900;
+  }
+
+  &__description {
+    color: #595959;
+    font-size: 1.2em;
+    padding-top: 25px;
+    line-height: 25px;
+
+  }
 }

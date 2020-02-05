@@ -303,7 +303,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -351,6 +351,29 @@ button {
 
 .project {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.project__img {
+  width: 100%;
+}
+
+.project__box {
+  padding: 30px;
+}
+
+.project__title {
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.project__description {
+  color: #595959;
+  font-size: 1.2em;
+  padding-top: 25px;
+  line-height: 25px;
 }
 /*# sourceMappingURL=main.css.map */
