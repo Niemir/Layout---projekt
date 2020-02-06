@@ -3,8 +3,16 @@
   background-color: #1f1f1f;
   font-size: $font-size;
 
+  @media(min-width: 769px) {
+    width: 100%;
+    padding: 30px 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &__item {
-    width: $box-width;
+
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -13,6 +21,14 @@
     text-align: center;
     border: 1px solid #333;
     color: #595959;
+
+    @media(min-width: 769px) {
+      width: 32.5%;
+      margin: 0;
+
+
+
+    }
 
   }
 

@@ -1,5 +1,3 @@
-.main {}
-
 .realizations {
 
   &__text-box {
@@ -13,6 +11,10 @@
       align-items: center;
       justify-content: space-between;
     }
+
+    @media(min-width: 769px) {
+      width: 93%;
+    }
   }
 
   &__title {
@@ -20,11 +22,7 @@
     font-weight: 900;
     padding: 40px 0 30px 0;
     font-family: $fontTitles;
-    text-align-last: left;
-
-    // @media(min-width: 768px) {
-    //   font-size: 3em;
-    // }
+    text-align: left;
 
   }
 
@@ -37,7 +35,6 @@
 
     @media(min-width: 481px) {
       width: 60%;
-      text-align: right;
       line-height: 20px;
       margin-top: 30px;
     }
@@ -49,6 +46,10 @@
     margin: 10px auto 20px auto;
     justify-content: space-between;
     align-items: center;
+
+    @media(min-width: 769px) {
+      width: 93%;
+    }
 
   }
 
@@ -80,6 +81,13 @@
   display: flex;
   flex-direction: column;
 
+  @media(min-width: 769px) {
+    flex-direction: row;
+    width: 96.5%;
+    margin: 0 auto;
+
+  }
+
 }
 
 .project {
@@ -89,29 +97,49 @@
   border-left: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 
+  &:nth-last-child(1) {
+    margin-bottom: 30px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
   @media(min-width: 481px) {
+    display: flex;
+    flex-direction: row;
     border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-left: none;
     border-bottom: 1px solid #ddd;
   }
 
-  @media(min-width: 481px) {
-    display: flex;
-    flex-direction: row;
+  @media(min-width: 769px) {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+    width: 30%;
+    flex-direction: column;
   }
 
-  &:nth-last-child(1) {
-    margin-bottom: 30px;
-  }
+
+
 
   &__photo {
     @media(min-width: 481px) {
       width: 70%;
       max-height: 245px;
       overflow: hidden;
+
+
     }
 
+    @media(min-width: 769px) {
+      width: 100%;
+      height: 200px;
+    }
   }
 
   &__img {
@@ -122,15 +150,30 @@
   &__box {
     padding: 30px;
 
+
     @media(min-width: 481px) {
       width: 45%;
+    }
+
+    @media(min-width: 769px) {
+      width: 100%;
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 210px;
     }
   }
 
   &__title {
     font-size: 16px;
     font-family: $fontTitles;
-    letter-spacing: 1px;
+
+
+    @media(min-width: 768px) {
+      font-size: 17px;
+    }
+
   }
 
   &__description {
@@ -140,5 +183,8 @@
     padding-top: 25px;
     line-height: 25px;
 
+    @media(min-width: 769px) {
+      padding: 0;
+    }
   }
 }
