@@ -1,6 +1,7 @@
 .team {
   padding: 20px 0;
   background-color: #1f1f1f;
+  font-size: $font-size;
 
   &__item {
     width: $box-width;
@@ -12,7 +13,7 @@
     text-align: center;
     border: 1px solid #333;
     color: #595959;
-    font-family: 'Raleway', sans-serif;
+
   }
 
   &__photo {
@@ -22,14 +23,17 @@
   &__name {
     text-transform: uppercase;
     font-weight: bold;
-
+    font-size: 1.3em;
+    @include fontTitles
   }
 
   &__description {
     color: #9d9d9d;
     width: 90%;
+    @include fontText;
     padding-top: 5px;
     line-height: 30px;
+    font-size: 1.2em;
 
     @media(min-width: 768px) {
       width: 80%;

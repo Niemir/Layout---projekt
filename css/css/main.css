@@ -10,20 +10,25 @@ button {
   font-size: inherit;
 }
 
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url("../../fonts/LeagueSpartan-Bold.otf");
+}
+
 .header {
   height: 490px;
   position: relative;
   background-image: url("../../assets/header-background.png");
-  background-size: 250%;
+  background-size: 350%;
   background-position: center;
   background-position-x: 50%;
-  font-size: 10px;
+  font-size: 8px;
 }
 
-@media (max-width: 479px) {
+@media (min-width: 481px) {
   .header {
-    font-size: 8px;
-    background-size: cover;
+    font-size: 10px;
+    background-size: 250%;
   }
 }
 
@@ -35,21 +40,47 @@ button {
 }
 
 .header__text {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header__name {
-  padding: 60px 0 10px 0;
+  padding: 70px 0 10px 0;
   color: #ccc;
-  font-size: 2.5em;
+  font-size: 2.4em;
+  font-weight: normal;
+}
+
+@media (min-width: 481px) {
+  .header__name {
+    padding: 80px 0 30px 0;
+  }
 }
 
 .header__title {
   color: white;
-  font-size: 4em;
+  font-size: 4.5em;
+  font-weight: normal;
+}
+
+@media (min-width: 330px) {
+  .header__title {
+    font-size: 3.7em;
+  }
+}
+
+@media (min-width: 481px) {
+  .header__title {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 550px) {
+  .header__title {
+    font-size: 4.5em;
+  }
 }
 
 .header__btns {
@@ -64,23 +95,23 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px auto 0 auto;
+  margin: 30px auto 0 auto;
   font-size: 1.6em;
 }
 
-@media (max-width: 479px) {
-  .header__btns {
-    width: 250px;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .header__btns {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     width: auto;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 769px) {
+  .header__btns {
     font-size: 1.2em;
   }
 }
@@ -92,10 +123,17 @@ button {
   margin: 10px 0;
 }
 
+@media (min-width: 481px) {
+  .header__btn {
+    margin-right: 10px;
+    padding: 0px 35px;
+  }
+}
+
 @media (min-width: 768px) {
   .header__btn {
     margin-right: 10px;
-    padding: 20px 40px;
+    padding: 0px 40px;
   }
 }
 
@@ -104,17 +142,23 @@ button {
   color: yellow;
 }
 
+@media (min-width: 481px) {
+  .header__btn--call {
+    padding: 20px 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .header__btn--call {
-    padding: 20px 15px;
+    padding: 20px 10px;
   }
 }
 
 .header__show-more {
   color: white;
   font-weight: 700;
-  margin-top: 20px;
-  font-size: 1.6em;
+  margin-top: 30px;
+  font-size: 1.4em;
 }
 
 @media (min-width: 768px) {
@@ -148,6 +192,14 @@ button {
   bottom: 5%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (min-width: 481px) {
+  .header__arrows {
+    bottom: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -287,16 +339,14 @@ button {
 }
 
 .nav__item--back {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
   text-align: center;
   font-size: 15px;
   color: #555;
   text-align: left;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -314,9 +364,8 @@ button {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -404,7 +453,10 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-family: 'Raleway', sans-sarif;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: unset;
   color: yellow;
   border: 2px solid yellow;
   padding: 20px;
@@ -416,6 +468,7 @@ button {
 .team {
   padding: 20px 0;
   background-color: #1f1f1f;
+  font-size: 10px;
 }
 
 .team__item {
@@ -435,7 +488,6 @@ button {
   text-align: center;
   border: 1px solid #333;
   color: #595959;
-  font-family: 'Raleway', sans-serif;
 }
 
 .team__photo {
@@ -445,13 +497,19 @@ button {
 .team__name {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.3em;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 .team__description {
   color: #9d9d9d;
   width: 90%;
+  font-family: 'Roboto', sans-serif;
   padding-top: 5px;
   line-height: 30px;
+  font-size: 1.2em;
 }
 
 @media (min-width: 768px) {
@@ -462,7 +520,6 @@ button {
 
 .main {
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .realizations__text-box {
@@ -496,6 +553,10 @@ button {
   font-size: 3.3em;
   font-weight: 900;
   padding: 20px 0;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-align-last: left;
 }
 
 @media (min-width: 768px) {
@@ -507,6 +568,7 @@ button {
 .realizations__description {
   font-size: 1.4em;
   line-height: 25px;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
 }
 
@@ -556,6 +618,9 @@ button {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.6em;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 .projects {
@@ -610,10 +675,14 @@ button {
 
 .project__title {
   font-size: 2em;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
   font-weight: 900;
 }
 
 .project__description {
+  font-family: 'Roboto', sans-serif;
   color: #595959;
   font-size: 1.3em;
   padding-top: 25px;
@@ -629,7 +698,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f8db15;
-  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -663,6 +731,7 @@ button {
   text-align: center;
   font-size: 1.5em;
   color: #595959;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -679,12 +748,15 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0 20px 0;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 1.8em;
 }
 
 @media (min-width: 768px) {
@@ -749,7 +821,6 @@ button {
   font-size: 1.5em;
   padding-bottom: 40px;
   color: #595959;
-  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -803,10 +874,13 @@ button {
 
 .media__follow {
   width: 50%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-align: left;
   color: #595959;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .media__box {
@@ -859,9 +933,11 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

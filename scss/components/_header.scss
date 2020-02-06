@@ -2,15 +2,14 @@
   height: 490px;
   position: relative;
   background-image: url('../../assets/header-background.png');
-  background-size: 250%;
+  background-size: 350%;
   background-position: center;
   background-position-x: 50%;
-  font-size: 10px;
+  font-size: 8px;
 
-
-  @media (max-width:479px) {
-    font-size: 8px;
-    background-size: cover;
+  @media(min-width: 481px) {
+    font-size: 10px;
+    background-size: 250%;
   }
 
   @media(min-width: 768px) {
@@ -19,18 +18,39 @@
   }
 
   &__text {
-    @include fontTitles
+    @include fontTitles;
+    text-transform: uppercase;
   }
 
   &__name {
-    padding: 60px 0 10px 0;
+    padding: 70px 0 10px 0;
     color: #ccc;
-    font-size: 2.5em;
+    font-size: 2.4em;
+    font-weight: normal;
+
+    @media(min-width: 481px) {
+      padding: 80px 0 30px 0;
+    }
   }
 
   &__title {
     color: white;
-    font-size: 4em;
+    font-size: 4.5em;
+    font-weight: normal;
+
+    @media(min-width: 330px) {
+      font-size: 3.7em;
+    }
+
+    @media(min-width: 481px) {
+      font-size: 4em;
+    }
+
+    @media(min-width: 550px) {
+
+      font-size: 4.5em;
+    }
+
   }
 
   &__btns {
@@ -38,17 +58,16 @@
     flex-direction: column;
     width: 300px;
     justify-content: center;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     font-size: 1.6em;
 
-    @media (max-width:479px) {
-      width: 250px;
-
-    }
-
-    @media(min-width: 768px) {
+    @media(min-width: 481px) {
       flex-direction: row;
       width: auto;
+      font-size: 1.3em;
+    }
+
+    @media(min-width: 769px) {
       font-size: 1.2em;
     }
 
@@ -60,17 +79,26 @@
     padding: 20px;
     margin: 10px 0;
 
+    @media(min-width: 481px) {
+      margin-right: 10px;
+      padding: 0px 35px;
+    }
+
     @media(min-width: 768px) {
       margin-right: 10px;
-      padding: 20px 40px;
+      padding: 0px 40px;
     }
 
     &--call {
       background: rgba(0, 0, 0, 0.5);
       color: yellow;
 
+      @media(min-width: 481px) {
+        padding: 20px 20px;
+      }
+
       @media(min-width: 768px) {
-        padding: 20px 15px;
+        padding: 20px 10px;
       }
     }
   }
@@ -78,8 +106,8 @@
   &__show-more {
     color: white;
     font-weight: 700;
-    margin-top: 20px;
-    font-size: 1.6em;
+    margin-top: 30px;
+    font-size: 1.4em;
 
     @media(min-width: 768px) {
       font-size: 1.4em;
@@ -105,6 +133,11 @@
     left: 50%;
     bottom: 5%;
     transform: translateX(-50%);
+
+    @media(min-width: 481px) {
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+    }
 
     @media(min-width: 768px) {
       bottom: 50%;

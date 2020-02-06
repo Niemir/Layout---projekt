@@ -1,7 +1,6 @@
 @mixin fontTitles {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -13,3 +12,4 @@
 }
 
 $box-width:90%;
+$font-size:10px;
