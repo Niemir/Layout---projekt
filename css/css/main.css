@@ -48,7 +48,7 @@ body {
   text-transform: uppercase;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
   .header__text {
     max-width: 1130px;
     text-align: left;
@@ -147,7 +147,7 @@ body {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
   .header__btns {
     max-width: 1130px;
     -webkit-box-pack: start;

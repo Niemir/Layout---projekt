@@ -20,7 +20,7 @@
     font-family: $fontTitles;
     text-transform: uppercase;
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1440px) {
       max-width: 1130px;
       text-align: left;
       margin: 0 auto;
@@ -90,7 +90,7 @@
       margin: 40px auto 0 auto;
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1440px) {
       max-width: 1130px;
       justify-content: flex-start;
 
@@ -127,7 +127,6 @@
       font-family: $fontTitles;
       color: black;
       font-size: 13px;
-
     }
 
     &--call {
@@ -136,16 +135,7 @@
       a {
         color: yellow;
       }
-
-      // @media(min-width: 481px) {
-      //   padding: 20px 20px;
-      // }
-
-      // @media(min-width: 768px) {
-      //   padding: 20px 10px;
-      // }
     }
-
 
   }
 
