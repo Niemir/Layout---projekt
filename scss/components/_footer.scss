@@ -2,11 +2,15 @@
   color: white;
   background: black;
   position: relative;
-  overflow: hidden;
 
-  @media(min-width: 768px) {
+  // overflow-y: hidden;
+
+
+  @media(min-width: 769px) {
     width: 100%;
   }
+
+
 
   &__logo {
     width: $box-width;
@@ -78,6 +82,18 @@
     }
   }
 
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3000px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%);
+    z-index: -1;
+  }
 }
 
 .media {
@@ -93,6 +109,11 @@
 
   }
 
+  @media(min-width: 769px) {
+    justify-content: flex-start;
+
+  }
+
   &__follow {
     width: 50%;
     font-family: $fontTitles;
@@ -100,6 +121,17 @@
     color: #595959;
     font-weight: bold;
     font-size: 13px;
+
+    @media(min-width: 769px) {
+      width: 19vw;
+
+    }
+
+    @media(min-width: 1025px) {
+
+      max-width: 8vw;
+
+    }
   }
 
   &__box {
@@ -117,14 +149,28 @@
   }
 }
 
+.box {
+  width: 100%;
 
+  @media(min-width: 1025px) {
+    width: 50vw;
+    max-width: 590px;
+  }
+}
 
 .footer {
 
   &__box {
-    @media(min-width: 768px) {
+    @media(min-width: 769px) {
       display: flex;
     }
+
+    @media(min-width: 1025px) {
+      float: right;
+      align-items: stretch;
+    }
+
+
   }
 
   &__nav {
@@ -132,7 +178,7 @@
     margin: 0 auto;
     padding: 30px 0;
 
-    @media(min-width: 768px) {
+    @media(min-width: 769px) {
       padding: 40px 0;
     }
   }
@@ -176,8 +222,6 @@
   background-position: 15% 37%;
   background-size: 190%;
   height: 250px;
-
-
   position: relative;
 
   @media(min-width: 481px) {
@@ -187,9 +231,18 @@
 
   @media(min-width: 769px) {
     width: 50%;
+    background-size: 200%;
+    background-position: 30% 37%;
     height: auto;
-    overflow: hidden;
   }
+
+  @media(min-width: 1025px) {
+    width: 50vw;
+    background-size: 100%;
+    background-position: 30% 37%;
+
+  }
+
 
   &__up {
     display: block;
@@ -197,21 +250,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media(min-width: 769px) {
+      top: 85%;
+      left: 85%;
+
+    }
   }
 
   &__up-text {
     position: absolute;
     top: 70%;
     left: 50%;
-    font-family: $fontText;
-    font-size: 1.5em;
+    font-family: $fontTitles;
+    font-size: 15px;
     color: #f7db15;
-    font-weight: 900;
-    transform: translateX(-50%)
+    width: 80px;
+    transform: translateX(-170%);
+
+    @media(min-width: 769px) {
+      top: 83.5%;
+      left: 85%;
+    }
+
+    @media(min-width: 1025px) {
+      top: 83.5%;
+      left: 85%;
+    }
   }
-}
-
-.box {
-  width: 100%;
-
 }

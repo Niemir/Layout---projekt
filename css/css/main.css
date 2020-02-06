@@ -38,8 +38,8 @@ body {
 
 @media (min-width: 1025px) {
   .header {
-    background-size: 101%;
     height: 800px;
+    background-size: cover;
   }
 }
 
@@ -299,6 +299,7 @@ body {
 .page {
   position: relative;
   left: 0;
+  overflow: hidden;
 }
 
 @media (min-width: 769px) {
@@ -1064,10 +1065,9 @@ main::after {
   color: white;
   background: black;
   position: relative;
-  overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .info {
     width: 100%;
   }
@@ -1149,6 +1149,20 @@ main::after {
   width: 100%;
 }
 
+.info::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3000px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-30%);
+          transform: translate(-30%);
+  z-index: -1;
+}
+
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1170,6 +1184,14 @@ main::after {
   }
 }
 
+@media (min-width: 769px) {
+  .media {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .media__follow {
   width: 50%;
   font-family: "LeagueSpartan", sans-serif;
@@ -1177,6 +1199,18 @@ main::after {
   color: #595959;
   font-weight: bold;
   font-size: 13px;
+}
+
+@media (min-width: 769px) {
+  .media__follow {
+    width: 19vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .media__follow {
+    max-width: 8vw;
+  }
 }
 
 .media__box {
@@ -1198,11 +1232,31 @@ main::after {
   }
 }
 
-@media (min-width: 768px) {
+.box {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .box {
+    width: 50vw;
+    max-width: 590px;
+  }
+}
+
+@media (min-width: 769px) {
   .footer__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer__box {
+    float: right;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 
@@ -1212,7 +1266,7 @@ main::after {
   padding: 30px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .footer__nav {
     padding: 40px 0;
   }
@@ -1270,8 +1324,17 @@ main::after {
 @media (min-width: 769px) {
   .map {
     width: 50%;
+    background-size: 200%;
+    background-position: 30% 37%;
     height: auto;
-    overflow: hidden;
+  }
+}
+
+@media (min-width: 1025px) {
+  .map {
+    width: 50vw;
+    background-size: 100%;
+    background-position: 30% 37%;
   }
 }
 
@@ -1284,20 +1347,37 @@ main::after {
           transform: translate(-50%, -50%);
 }
 
+@media (min-width: 769px) {
+  .map__up {
+    top: 85%;
+    left: 85%;
+  }
+}
+
 .map__up-text {
   position: absolute;
   top: 70%;
   left: 50%;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-family: "LeagueSpartan", sans-serif;
+  font-size: 15px;
   color: #f7db15;
-  font-weight: 900;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  width: 80px;
+  -webkit-transform: translateX(-170%);
+          transform: translateX(-170%);
 }
 
-.box {
-  width: 100%;
+@media (min-width: 769px) {
+  .map__up-text {
+    top: 83.5%;
+    left: 85%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .map__up-text {
+    top: 83.5%;
+    left: 85%;
+  }
 }
 
 .call {
@@ -1312,6 +1392,7 @@ main::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 @media (min-width: 660px) {
@@ -1332,6 +1413,27 @@ main::after {
             flex-direction: row;
     padding: 20px 3.5%;
   }
+}
+
+@media (min-width: 1025px) {
+  .call {
+    margin: 0 auto;
+    max-width: 1310px;
+  }
+}
+
+.call::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3000px;
+  background-color: #f8db15;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-30%);
+          transform: translate(-30%);
+  z-index: -1;
 }
 
 .call__box {
@@ -1379,6 +1481,12 @@ main::after {
   }
 }
 
+@media (min-width: 1025px) {
+  .call__description {
+    font-size: 22px;
+  }
+}
+
 .call__phonebox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1405,7 +1513,20 @@ main::after {
 
 @media (min-width: 769px) {
   .call__phonebox {
-    width: 20%;
+    width: 24%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .call__phonebox {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .call__number {
+    font-size: 34px;
   }
 }
 /*# sourceMappingURL=main.css.map */
