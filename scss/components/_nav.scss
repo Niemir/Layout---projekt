@@ -88,7 +88,7 @@
   }
 
   &__item--back {
-    @include fontTitles;
+    font-family: $fontTitles;
     font-size: 15px;
     color: #555;
     text-align: left;
@@ -97,7 +97,7 @@
       display: none;
     }
 
-    @include fontTitles;
+    font-family: $fontTitles;
 
     img {
       width: 10px;
@@ -108,10 +108,10 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
-    @include fontTitles;
+    font-family: $fontTitles;
 
     @media(min-width: 768px) {
-      @include fontText;
+      font-family: $fontText;
       font-size: 13px;
       color: #333;
 

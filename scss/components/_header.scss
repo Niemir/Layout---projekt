@@ -2,30 +2,21 @@
   height: 490px;
   position: relative;
   background-image: url('../../assets/header-background.png');
-  background-size: 350%;
+  background-size: cover;
   background-position: center;
   background-position-x: 50%;
-  font-size: 8px;
+  text-align: center;
 
-  @media(min-width: 481px) {
-    font-size: 10px;
-    background-size: 250%;
-  }
-
-  @media(min-width: 768px) {
-    font-size: 13px;
-    background-size: 200%;
-  }
 
   &__text {
-    @include fontTitles;
+    font-family: $fontTitles;
     text-transform: uppercase;
   }
 
   &__name {
     padding: 70px 0 10px 0;
     color: #ccc;
-    font-size: 2.4em;
+    font-size: 20px;
     font-weight: normal;
 
     @media(min-width: 481px) {
@@ -35,20 +26,15 @@
 
   &__title {
     color: white;
-    font-size: 4.5em;
+    font-size: 30px;
     font-weight: normal;
 
-    @media(min-width: 330px) {
-      font-size: 3.7em;
-    }
-
     @media(min-width: 481px) {
-      font-size: 4em;
+      font-size: 35px;
     }
 
-    @media(min-width: 550px) {
-
-      font-size: 4.5em;
+    @media(min-width: 600px) {
+      font-size: 45px;
     }
 
   }
@@ -56,62 +42,63 @@
   &__btns {
     display: flex;
     flex-direction: column;
-    width: 300px;
     justify-content: center;
     margin: 30px auto 0 auto;
-    font-size: 1.6em;
+    align-items: center;
 
     @media(min-width: 481px) {
       flex-direction: row;
-      width: auto;
-      font-size: 1.3em;
-    }
-
-    @media(min-width: 769px) {
-      font-size: 1.2em;
+      margin: 50px auto 0 auto;
     }
 
   }
 
   &__btn {
+    width: 300px;
     background: yellow;
     border: none;
     padding: 20px;
     margin: 10px 0;
 
     @media(min-width: 481px) {
+      width: auto;
       margin-right: 10px;
-      padding: 0px 35px;
     }
 
-    @media(min-width: 768px) {
-      margin-right: 10px;
-      padding: 0px 40px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $fontTitles;
+      color: black;
+      font-size: 13px;
+
     }
 
     &--call {
       background: rgba(0, 0, 0, 0.5);
-      color: yellow;
 
-      @media(min-width: 481px) {
-        padding: 20px 20px;
+      a {
+        color: yellow;
       }
 
-      @media(min-width: 768px) {
-        padding: 20px 10px;
-      }
+      // @media(min-width: 481px) {
+      //   padding: 20px 20px;
+      // }
+
+      // @media(min-width: 768px) {
+      //   padding: 20px 10px;
+      // }
     }
+
+
   }
 
   &__show-more {
     color: white;
-    font-weight: 700;
     margin-top: 30px;
-    font-size: 1.4em;
-
-    @media(min-width: 768px) {
-      font-size: 1.4em;
-    }
+    font-size: 12px;
   }
 
   &__show-btn {

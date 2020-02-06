@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   background-color: #f8db15;
-
-  font-size: 10px;
   align-items: center;
 
-  @media(min-width: 768px) {
+  @media(min-width: 660px) {
     flex-direction: row;
     padding: 0 5%;
   }
@@ -14,7 +12,7 @@
   &__box {
     padding: 20px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 660px) {
       padding: 20px 0;
       flex-grow: 1;
     }
@@ -22,11 +20,11 @@
 
   &__description {
     text-align: center;
-    font-size: 1.5em;
-    color: #595959;
-    @include fontText;
+    font-size: 16px;
+    color: #9c8b17;
+    font-family: $fontText;
 
-    @media(min-width: 768px) {
+    @media(min-width: 660px) {
       text-align: left;
     }
   }
@@ -34,16 +32,15 @@
   &__phonebox {
     display: flex;
     width: $box-width;
-    justify-content: space-between;
+    justify-content: space-around;
     // margin: 0 auto;
-    @include fontTitles;
+    font-family: $fontTitles;
     align-items: center;
     padding: 0 0 20px 0;
-    font-weight: 900;
-    font-size: 1.8em;
+    font-size: 18px;
 
 
-    @media(min-width: 768px) {
+    @media(min-width: 660px) {
       width: 60%;
       flex-grow: 2;
       padding: 0 0 0 10%;
@@ -52,10 +49,8 @@
 }
 
 .info {
-
   color: white;
   background: black;
-  font-size: 10px;
   position: relative;
 
   &__logo {
@@ -73,33 +68,32 @@
     width: $box-width;
     margin: 0 auto;
     padding: 20px 0;
-    @include fontText
+    font-family: $fontText
   }
 
   &__name {
-    font-size: 1.7em;
+    font-size: 18px;
+    color: #a8a8a8;
   }
 
   &__box {
-
     display: flex;
     flex-wrap: wrap;
-    // flex-shrink: 0;
     border-bottom: 1px solid #222;
 
-    @media(min-width: 768px) {
+    @media(min-width: 660px) {
       justify-content: space-between;
     }
   }
 
   &__data {
     width: 50%;
-    font-size: 1.5em;
+    font-size: 16px;
     padding-bottom: 40px;
     color: #595959;
 
 
-    @media(min-width: 768px) {
+    @media(min-width: 660px) {
       width: auto;
     }
 
@@ -114,7 +108,7 @@
     }
 
     span {
-      color: yellow
+      color: #f8db13
     }
   }
 
@@ -132,24 +126,24 @@
 
 .media {
   display: flex;
-
   width: $box-width;
   margin: 0 auto;
   align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid #333;
 
-  @media(min-width: 768px) {
+  @media(min-width: 660px) {
     justify-content: space-between;
+
   }
 
   &__follow {
     width: 50%;
-    @include fontTitles;
+    font-family: $fontTitles;
     text-align: left;
     color: #595959;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 13px;
   }
 
   &__box {
@@ -158,9 +152,10 @@
     justify-content: space-between;
     padding-left: 15px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 660px) {
       width: 158px;
       padding: 0;
+      margin-right: 30px;
     }
 
   }
@@ -195,12 +190,11 @@
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
-    font-size: 1em;
-    font-weight: bold;
-    @include fontTitles;
+    font-size: 11px;
+    font-family: $fontTitles;
 
-    @media(min-width: 768px) {
-      font-size: 1.5em;
+    @media(min-width: 481px) {
+      font-size: 13px;
     }
 
     &:hover {
@@ -218,7 +212,7 @@
   height: 250px;
   position: relative;
 
-  @media(min-width: 768px) {
+  @media(min-width: 481px) {
     background-size: 130%;
     background-position: -20% 37%;
   }
@@ -235,7 +229,7 @@
     position: absolute;
     top: 70%;
     left: 50%;
-    @include fontText;
+    font-family: $fontText;
     font-size: 1.5em;
     color: #f7db15;
     font-weight: 900;
