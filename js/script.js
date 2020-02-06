@@ -1,4 +1,4 @@
-const backBurger = document.querySelector('.nav__item--back');
+const backBurger = document.querySelector('.nav__item--back a');
 const burger = document.querySelector('.burger');
 const sideMenu = document.querySelector('.nav__burger-menu');
 const page = document.querySelector('.page');

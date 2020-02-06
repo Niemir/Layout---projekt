@@ -19,6 +19,11 @@
 
     }
 
+    @media(min-width: 1025px) {
+      width: 25%;
+
+    }
+
     &--1 {
       background-image: url('../../assets/action-paint.png');
     }

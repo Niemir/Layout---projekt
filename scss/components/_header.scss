@@ -9,12 +9,24 @@
 
   @media(min-width: 769px) {
     height: 680px;
+  }
 
+  @media(min-width: 1025px) {
+
+    background-size: 101%;
+    height: 800px;
   }
 
   &__text {
     font-family: $fontTitles;
     text-transform: uppercase;
+
+    @media(min-width: 1025px) {
+      max-width: 1130px;
+      text-align: left;
+      margin: 0 auto;
+
+    }
   }
 
   &__name {
@@ -29,7 +41,11 @@
 
     @media(min-width: 769px) {
       padding: 160px 0 30px 0;
+    }
 
+    @media(min-width: 1025px) {
+      font-size: 23px;
+      padding: 230px 0 30px 0;
     }
   }
 
@@ -51,6 +67,12 @@
       line-height: 75px;
     }
 
+    @media(min-width: 1025px) {
+      font-size: 52px;
+      line-height: 80px;
+
+    }
+
   }
 
   &__btns {
@@ -67,6 +89,12 @@
 
     @media(min-width: 769px) {
       margin: 40px auto 0 auto;
+    }
+
+    @media(min-width: 1025px) {
+      max-width: 1130px;
+      justify-content: flex-start;
+
     }
 
   }
@@ -88,6 +116,10 @@
 
     }
 
+    @media(min-width: 1025px) {
+      padding: 20px 40px;
+
+    }
 
     a {
       display: block;
@@ -127,6 +159,11 @@
       margin-top: 80px;
       font-size: 14px;
     }
+
+    @media(min-width: 1025px) {
+      text-align: center;
+      font-size: 16px;
+    }
   }
 
   &__show-btn {
@@ -158,6 +195,12 @@
       $box-width: 93%;
       width: $box-width;
     }
+
+    @media(min-width: 1025px) {
+
+      max-width: 1720px;
+    }
+
 
 
   }
