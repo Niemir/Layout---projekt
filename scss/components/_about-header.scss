@@ -4,10 +4,37 @@
   &__content {
     width: 90vw;
     margin: 0 auto;
+
+    @media screen and (min-width:769px) {
+      width: 93vw;
+    }
+
+    @media screen and (min-width:1025px) {
+      max-width: 1130px;
+    }
   }
 
 
 
+}
+
+.header-side__container {
+  background-image: url('../../assets/sidepage-header-background.png');
+  background-color: #f8db14;
+  background-size: 400%;
+  background-position: 37% 47%;
+
+  @media screen and (min-width:769px) {
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (min-width:1025px) {
+
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .header-side {
@@ -22,4 +49,10 @@
   background-color: #f8db14;
   background-size: 400%;
   background-position: 37% 47%;
+
+  @media screen and (min-width:1025px) {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

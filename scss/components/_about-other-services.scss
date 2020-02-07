@@ -17,6 +17,17 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width:769px) {
+      flex-direction: row;
+      justify-content: space-around;
+      max-width: 1000px;
+      margin: 0 auto;
+
+      &__btn {
+        margin: 0 10px;
+      }
+    }
+
   }
 
   &__btn {
@@ -44,4 +55,9 @@
   padding: 25px 0;
   width: 90%;
   border: none;
+
+  @media screen and (min-width:1025px) {
+
+    max-width: 1130px;
+  }
 }

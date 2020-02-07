@@ -29,6 +29,14 @@
 
     }
 
+    @media screen and (min-width:769px) {
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
+    }
+
 
   }
 
@@ -47,5 +55,12 @@
     text-transform: uppercase;
     font-size: 15px;
     padding: 15px 0;
+  }
+}
+
+.right-side {
+  @media screen and (min-width:769px) {
+    padding: 50px 0 0 0;
+    width: 40%;
   }
 }
