@@ -19,10 +19,10 @@ burgerHandler = () => {
 }
 
 changeView = () => {
-  console.log(window.innerWidth);
+
 
   if (window.innerWidth >= 768) {
-    console.log('wincej');
+
     page.classList.remove('page--active')
   }
   if (sideMenu.classList.contains('nav__burger-menu--active') && window.innerWidth >= 768) {
