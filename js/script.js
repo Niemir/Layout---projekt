@@ -53,12 +53,12 @@ arrows.forEach(arrow => {
     let index = bgImage.indexOf('/assets/');
     let oldUrl = bgImage.slice(index);
     if (oldUrl == '/assets/header-background.png")') {
-      header.style.backgroundImage = "url('../../assets/header-background2.jpg')";
+      header.style.backgroundImage = "url('../../assets/header-background2.png')";
       return
     }
     let newIndex = window.getComputedStyle(header).backgroundImage.indexOf('/assets/');
     let newUrl = window.getComputedStyle(header).backgroundImage.slice(newIndex)
-    if (newUrl == '/assets/header-background2.jpg")') {
+    if (newUrl == '/assets/header-background2.png")') {
       header.style.backgroundImage = "url('../../assets/header-background.png')"
     }
 
