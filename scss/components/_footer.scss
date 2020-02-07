@@ -104,6 +104,7 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #333;
 
+
   @media(min-width: 660px) {
     justify-content: space-between;
 
@@ -129,7 +130,7 @@
 
     @media(min-width: 1025px) {
 
-      max-width: 8vw;
+      max-width: 11vw;
 
     }
   }
@@ -139,6 +140,8 @@
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
+    z-index: 120;
+    cursor: pointer;
 
     @media(min-width: 660px) {
       width: 158px;
@@ -192,6 +195,7 @@
   &__item {
 
     text-align: center;
+    z-index: 12;
   }
 
   &__link {
@@ -203,6 +207,7 @@
     width: 100%;
     font-size: 11px;
     font-family: $fontTitles;
+
 
     @media(min-width: 481px) {
       font-size: 13px;
@@ -250,6 +255,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 
     @media(min-width: 769px) {
       top: 85%;

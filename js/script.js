@@ -80,7 +80,10 @@ realizationsBtn.addEventListener('click', (e) => {
   e.preventDefault()
   document.querySelector('.projects').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
 })
-arrowUp.addEventListener('click', () => {
-  document.querySelector('.nav').scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+
+
+document.querySelector('.header__show-services').addEventListener('click', (e) => {
+  e.preventDefault()
+  document.querySelector('.actions').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
 })
 

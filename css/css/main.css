@@ -1294,7 +1294,7 @@ main::after {
 
 @media (min-width: 1025px) {
   .media__follow {
-    max-width: 8vw;
+    max-width: 11vw;
   }
 }
 
@@ -1307,6 +1307,8 @@ main::after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 15px;
+  z-index: 120;
+  cursor: pointer;
 }
 
 @media (min-width: 660px) {
@@ -1369,6 +1371,7 @@ main::after {
 
 .footer__item {
   text-align: center;
+  z-index: 12;
 }
 
 .footer__link {
@@ -1430,6 +1433,7 @@ main::after {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 @media (min-width: 769px) {
