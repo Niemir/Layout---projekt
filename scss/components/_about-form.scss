@@ -18,6 +18,18 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (min-width:481px) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      input {
+
+        width: 49%;
+      }
+
+    }
+
+
   }
 
   input,

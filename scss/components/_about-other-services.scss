@@ -29,3 +29,19 @@
     margin: 7px 0;
   }
 }
+
+.show-more__container {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.show-more {
+  font-family: $fontTitles;
+  text-transform: uppercase;
+  background-color: #f8db14;
+  color: white;
+  padding: 25px 0;
+  width: 90%;
+  border: none;
+}

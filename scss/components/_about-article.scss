@@ -15,6 +15,12 @@
 
   &__image {
     width: 100%;
+
+    @media screen and (min-width:481px) {
+      max-width: 660px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 

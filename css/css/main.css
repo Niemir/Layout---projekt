@@ -891,6 +891,16 @@ main::after {
   font-family: "LeagueSpartan", sans-serif;
 }
 
+.realizations--side-page {
+  border-bottom: 1px solid #ddd;
+  width: 90%;
+  margin: 0 auto 30px auto;
+}
+
+.realizations--side-page .realizations__text-box {
+  margin: 0;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1059,6 +1069,10 @@ main::after {
   .project__description {
     font-size: 16px;
   }
+}
+
+.project--additional {
+  display: none;
 }
 
 .info {
@@ -1577,6 +1591,14 @@ main::after {
   width: 100%;
 }
 
+@media screen and (min-width: 481px) {
+  .article__image {
+    max-width: 660px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .text-box {
   background-color: #f0f0f0;
   padding: 35px 28px;
@@ -1633,6 +1655,21 @@ main::after {
           flex-direction: column;
 }
 
+@media screen and (min-width: 481px) {
+  .input__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .input__box input {
+    width: 49%;
+  }
+}
+
 .input input,
 .input textarea {
   font-family: "Roboto", sans-serif;
@@ -1685,5 +1722,21 @@ main::after {
   font-size: 18px;
   padding: 18px 0;
   margin: 7px 0;
+}
+
+.show-more__container {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.show-more {
+  font-family: "LeagueSpartan", sans-serif;
+  text-transform: uppercase;
+  background-color: #f8db14;
+  color: white;
+  padding: 25px 0;
+  width: 90%;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
