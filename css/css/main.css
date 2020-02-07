@@ -1227,7 +1227,7 @@ main::after {
 .info__background {
   position: absolute;
   left: -45%;
-  top: -20%;
+  bottom: 0;
 }
 
 .info__background img {
