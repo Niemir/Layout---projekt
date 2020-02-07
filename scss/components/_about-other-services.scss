@@ -1,0 +1,31 @@
+.other-services {
+  background-image: url('../../assets/side-page-other-serive-bg.png');
+  background-size: cover;
+
+  text-align: center;
+  font-family: $fontTitles;
+  text-transform: uppercase;
+  padding: 50px 0;
+
+  &__title {
+    padding-bottom: 30px;
+    color: #6c6c6c;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__btn {
+    width: 295px;
+    border: 2px solid black;
+    background: transparent;
+    font-family: $fontTitles;
+    font-size: 18px;
+    padding: 18px 0;
+    margin: 7px 0;
+  }
+}

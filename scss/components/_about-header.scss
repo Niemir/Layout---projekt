@@ -1,0 +1,25 @@
+.side-page-container {
+  background-color: #fff;
+
+  &__content {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+
+
+}
+
+.header-side {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+  font-family: $fontTitles;
+  font-size: 15px;
+  color: #736718;
+  background-image: url('../../assets/sidepage-header-background.png');
+  background-color: #f8db14;
+  background-size: 400%;
+  background-position: 37% 47%;
+}
