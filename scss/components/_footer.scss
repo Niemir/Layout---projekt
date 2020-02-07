@@ -266,16 +266,19 @@
     font-size: 15px;
     color: #f7db15;
     width: 80px;
-    transform: translateX(-170%);
+    transform: translate(-45%, 50%);
+
 
     @media(min-width: 769px) {
       top: 83.5%;
       left: 85%;
+      transform: translateX(-170%);
     }
 
     @media(min-width: 1025px) {
       top: 83.5%;
       left: 85%;
+      transform: translateX(-170%);
     }
   }
 }
