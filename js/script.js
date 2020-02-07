@@ -81,6 +81,10 @@ realizationsBtn.addEventListener('click', (e) => {
   document.querySelector('.projects').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
 })
 
+contactBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  document.querySelector('.footer').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+})
 
 document.querySelector('.header__show-services').addEventListener('click', (e) => {
   e.preventDefault()
