@@ -115,6 +115,7 @@ main {
 
   &__arrow {
     padding: 20px 0;
+    cursor: pointer;
 
     &--right img {
       display: block;
@@ -126,10 +127,16 @@ main {
   &__btn {
     background: none;
     border: none;
-    color: #f6da14;
+
     text-transform: uppercase;
     font-size: 14px;
     font-family: $fontTitles;
+    cursor: pointer;
+
+    a {
+      color: #f6da14;
+      text-decoration: none;
+    }
   }
 }
 

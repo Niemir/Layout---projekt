@@ -159,9 +159,11 @@
     background: none;
     border: none;
     margin-top: 20px;
+    cursor: pointer;
 
     img {
       width: 70%;
+
       transform: rotate(-90deg);
     }
   }
@@ -174,6 +176,7 @@
     left: 50%;
     bottom: 5%;
     transform: translateX(-50%);
+    cursor: pointer;
 
     @media(min-width: 481px) {
       bottom: 50%;

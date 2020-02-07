@@ -223,6 +223,7 @@ body {
   background: none;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .header__show-btn img {
@@ -244,6 +245,7 @@ body {
   bottom: 5%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  cursor: pointer;
 }
 
 @media (min-width: 481px) {
@@ -877,6 +879,7 @@ main::after {
 
 .realizations__arrow {
   padding: 20px 0;
+  cursor: pointer;
 }
 
 .realizations__arrow--right img {
@@ -889,10 +892,15 @@ main::after {
 .realizations__btn {
   background: none;
   border: none;
-  color: #f6da14;
   text-transform: uppercase;
   font-size: 14px;
   font-family: "LeagueSpartan", sans-serif;
+  cursor: pointer;
+}
+
+.realizations__btn a {
+  color: #f6da14;
+  text-decoration: none;
 }
 
 .realizations--side-page {
@@ -1905,6 +1913,12 @@ main::after {
   font-size: 18px;
   padding: 18px 0;
   margin: 7px 0;
+  cursor: pointer;
+}
+
+.other-services__btn a {
+  color: black;
+  text-decoration: none;
 }
 
 .show-more__container {

@@ -89,5 +89,9 @@ contactBtn.addEventListener('click', (e) => {
 document.querySelector('.header__show-services').addEventListener('click', (e) => {
   e.preventDefault()
   document.querySelector('.actions').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+});
+document.querySelector('.header__show-btn').addEventListener('click', (e) => {
+  e.preventDefault()
+  document.querySelector('.actions').scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
 })
 
