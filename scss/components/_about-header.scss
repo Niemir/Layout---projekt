@@ -20,7 +20,7 @@
 
 .header-side__container {
   background-image: url('../../assets/sidepage-header-background.png');
-  background-color: #f8db14;
+  background-color: $main-color;
   background-size: 400%;
   background-position: 37% 47%;
 
@@ -46,7 +46,7 @@
   font-size: 15px;
   color: #736718;
   background-image: url('../../assets/sidepage-header-background.png');
-  background-color: #f8db14;
+  background-color: $main-color;
   background-size: 400%;
   background-position: 37% 47%;
 

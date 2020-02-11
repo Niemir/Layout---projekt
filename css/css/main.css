@@ -157,10 +157,15 @@ body {
 
 .header__btn {
   width: 300px;
-  background: yellow;
+  background: #f8db15;
   border: none;
   padding: 20px;
   margin: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "LeagueSpartan", sans-serif;
+  color: black;
+  font-size: 13px;
 }
 
 @media (min-width: 481px) {
@@ -182,21 +187,9 @@ body {
   }
 }
 
-.header__btn a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "LeagueSpartan", sans-serif;
-  color: black;
-  font-size: 13px;
-}
-
 .header__btn--call {
   background: rgba(0, 0, 0, 0.5);
-}
-
-.header__btn--call a {
-  color: yellow;
+  color: #f8db15;
 }
 
 .header__show-more {
@@ -424,7 +417,7 @@ body {
   display: block;
   font-family: "LeagueSpartan", sans-serif;
   font-size: 13px;
-  color: #797979;
+  color: #595959;
   font-weight: bold;
   text-align: left;
   text-decoration: none;
@@ -454,7 +447,7 @@ body {
 @media (min-width: 769px) {
   .nav__link {
     font-size: 12px;
-    color: #4c4c4c;
+    color: #595959;
     font-weight: 900;
     padding-bottom: 30px;
     border-bottom: 5px solid white;
@@ -569,7 +562,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "LeagueSpartan", sans-serif;
-  border: 2px solid #f7dc13;
+  border: 2px solid #f8db15;
   padding: 20px 25px;
   font-weight: normal;
   text-align: center;
@@ -579,7 +572,7 @@ body {
 }
 
 .actions__text a {
-  color: #f7dc13;
+  color: #f8db15;
   text-decoration: none;
 }
 
@@ -896,10 +889,7 @@ main::after {
   font-size: 14px;
   font-family: "LeagueSpartan", sans-serif;
   cursor: pointer;
-}
-
-.realizations__btn a {
-  color: #f6da14;
+  color: #f8db15;
   text-decoration: none;
 }
 
@@ -993,19 +983,12 @@ main::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border-top: 1px solid #e9e9e9;
-    border-right: 1px solid #e9e9e9;
-    border-left: none;
-    border-bottom: 1px solid #e9e9e9;
+    border: 1px solid #e9e9e9;
   }
 }
 
 @media (min-width: 769px) {
   .project {
-    border-top: 1px solid #e9e9e9;
-    border-right: 1px solid #e9e9e9;
-    border-left: 1px solid #e9e9e9;
-    border-bottom: 1px solid #e9e9e9;
     max-width: 31%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1089,7 +1072,7 @@ main::after {
 
 .project__description {
   font-family: "Roboto", sans-serif;
-  color: #969696;
+  color: #595959;
   font-size: 14px;
   padding-top: 25px;
   line-height: 25px;
@@ -1234,7 +1217,7 @@ main::after {
 }
 
 .info__data span {
-  color: #f8db13;
+  color: #f8db15;
 }
 
 .info__background {
@@ -1404,7 +1387,7 @@ main::after {
 }
 
 .footer__link:hover {
-  color: yellow;
+  color: #f8db15;
 }
 
 .map {
@@ -1462,7 +1445,7 @@ main::after {
   left: 50%;
   font-family: "LeagueSpartan", sans-serif;
   font-size: 15px;
-  color: #f7db15;
+  color: #f8db15;
   width: 80px;
   -webkit-transform: translate(-45%, 50%);
           transform: translate(-45%, 50%);
@@ -1567,7 +1550,7 @@ main::after {
 .call__description {
   text-align: center;
   font-size: 16px;
-  color: #9c8b17;
+  color: #a28e05;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1659,7 +1642,7 @@ main::after {
 
 .header-side__container {
   background-image: url("../../assets/sidepage-header-background.png");
-  background-color: #f8db14;
+  background-color: #f8db15;
   background-size: 400%;
   background-position: 37% 47%;
 }
@@ -1691,7 +1674,7 @@ main::after {
   font-size: 15px;
   color: #736718;
   background-image: url("../../assets/sidepage-header-background.png");
-  background-color: #f8db14;
+  background-color: #f8db15;
   background-size: 400%;
   background-position: 37% 47%;
 }
@@ -1738,7 +1721,7 @@ main::after {
 }
 
 .article__paragraph {
-  color: #4e4e4e;
+  color: #595959;
   line-height: 27px;
   padding: 35px 0;
 }
@@ -1770,14 +1753,14 @@ main::after {
   font-family: "Roboto", sans-serif;
   padding: 28px 0;
   font-size: 17px;
-  color: #7f7f7f;
+  color: #595959;
   font-weight: 500;
   line-height: 30px;
 }
 
 .text-box__paragraph {
   font-size: 15px;
-  color: #7f7f7f;
+  color: #595959;
   line-height: 25px;
 }
 
@@ -1847,7 +1830,7 @@ main::after {
 }
 
 .input__button {
-  background-color: #f8db14;
+  background-color: #f8db15;
   border: none;
   font-family: "LeagueSpartan", sans-serif;
   text-transform: uppercase;
@@ -1930,7 +1913,7 @@ main::after {
 .show-more {
   font-family: "LeagueSpartan", sans-serif;
   text-transform: uppercase;
-  background-color: #f8db14;
+  background-color: #f8db15;
   color: white;
   padding: 25px 0;
   width: 90%;

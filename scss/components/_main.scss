@@ -74,7 +74,7 @@ main {
     font-size: 14px;
     line-height: 25px;
     font-family: $fontText;
-    color: #595959;
+    color: $p-color;
 
 
     @media(min-width: 481px) {
@@ -132,11 +132,9 @@ main {
     font-size: 14px;
     font-family: $fontTitles;
     cursor: pointer;
+    color: $main-color;
+    text-decoration: none;
 
-    a {
-      color: #f6da14;
-      text-decoration: none;
-    }
   }
 }
 

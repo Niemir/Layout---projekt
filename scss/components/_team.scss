@@ -25,7 +25,7 @@
     align-items: center;
     text-align: center;
     border: 1px solid #333;
-    color: #595959;
+    color: $p-color;
 
     @media(min-width: 769px) {
       width: 32.5%;

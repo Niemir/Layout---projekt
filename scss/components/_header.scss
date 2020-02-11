@@ -100,10 +100,15 @@
 
   &__btn {
     width: 300px;
-    background: yellow;
+    background: $main-color;
     border: none;
     padding: 20px;
     margin: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $fontTitles;
+    color: black;
+    font-size: 13px;
 
     @media(min-width: 481px) {
       width: auto;
@@ -112,29 +117,15 @@
 
     @media(min-width: 769px) {
       padding: 20px 30px;
-
     }
 
     @media(min-width: 1025px) {
       padding: 20px 40px;
-
-    }
-
-    a {
-      display: block;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: $fontTitles;
-      color: black;
-      font-size: 13px;
     }
 
     &--call {
       background: rgba(0, 0, 0, 0.5);
-
-      a {
-        color: yellow;
-      }
+      color: $main-color;
     }
 
   }
@@ -163,7 +154,6 @@
 
     img {
       width: 70%;
-
       transform: rotate(-90deg);
     }
   }
