@@ -485,6 +485,8 @@ body {
   width: 30px;
   height: 30px;
   position: relative;
+  background-color: white;
+  border: none;
 }
 
 .burger__line {
@@ -1178,6 +1180,11 @@ main::after {
   color: #a8a8a8;
 }
 
+.info__mail {
+  color: #f8db15;
+  text-decoration: none;
+}
+
 .info__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1214,10 +1221,6 @@ main::after {
 
 .info__data:nth-child(3) {
   padding-bottom: 30px;
-}
-
-.info__data span {
-  color: #f8db15;
 }
 
 .info__background {
@@ -1611,6 +1614,11 @@ main::after {
   .call__phonebox {
     width: 30%;
   }
+}
+
+.call__number {
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 1025px) {

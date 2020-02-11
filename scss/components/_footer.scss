@@ -3,14 +3,10 @@
   background: black;
   position: relative;
 
-  // overflow-y: hidden;
-
 
   @media(min-width: 769px) {
     width: 100%;
   }
-
-
 
   &__logo {
     width: $box-width;
@@ -33,6 +29,11 @@
   &__name {
     font-size: 18px;
     color: #a8a8a8;
+  }
+
+  &__mail {
+    color: $main-color;
+    text-decoration: none;
   }
 
   &__box {
@@ -66,9 +67,6 @@
 
     }
 
-    span {
-      color: $main-color;
-    }
   }
 
   &__background {
